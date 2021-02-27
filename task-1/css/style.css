@@ -1,0 +1,122 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #C6C7C8;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.flags {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flags__item {
+  width: 300px;
+  height: 170px;
+  margin: 0 0 20px 0;
+}
+
+.flags__item:nth-last-child(1) {
+  margin: 0;
+}
+
+.flags__item_ua {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #0058B5), color-stop(50%, #F7CE00));
+  background: linear-gradient(to bottom, #0058B5 50%, #F7CE00 50%);
+}
+
+.flags__item_jap {
+  background-color: #FFF;
+  position: relative;
+}
+
+.flags__item_jap:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #EA0C25;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.flags__item_ice {
+  background-color: #02529C;
+  position: relative;
+}
+
+.flags__item_ice .horizontal-white {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.flags__item_ice .vertical-white {
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  background-color: #fff;
+  left: 30%;
+}
+
+.flags__item_ice .horizontal-red {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background-color: red;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.flags__item_ice .vertical-red {
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  background-color: red;
+  left: 30%;
+  -webkit-transform: translate(50%, 0);
+          transform: translate(50%, 0);
+}
+
+.flags__item_cz {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #FFF), color-stop(50%, #D7141A));
+  background: linear-gradient(to bottom, #FFF 50%, #D7141A 50%);
+  position: relative;
+}
+
+.flags__item_cz::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 85px solid transparent;
+  border-left: 150px solid #11457E;
+  border-bottom: 85px solid transparent;
+}
